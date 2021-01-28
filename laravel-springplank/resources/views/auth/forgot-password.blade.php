@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+    <div>
+        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+    </div>
+
     @if (session('status'))
         <div>
             {{ session('status') }}
@@ -19,7 +23,7 @@
         </div>
     @endif
 
-    <form method="POST" action="{{ route('login') }}">
+    <form method="POST" action="{{ route('password.email') }}">
         @csrf
 
         <div>
@@ -28,24 +32,8 @@
         </div>
 
         <div>
-            <label>{{ __('Password') }}</label>
-            <input type="password" name="password" required autocomplete="current-password" />
-        </div>
-
-        <div>
-            <label>{{ __('Remember me') }}</label>
-            <input type="checkbox" name="remember">
-        </div>
-
-        @if (Route::has('password.request'))
-            <a href="{{ route('password.request') }}">
-                {{ __('Forgot your password?') }}
-            </a>
-        @endif
-
-        <div>
             <button type="submit">
-               {{ __('Login') }}
+                {{ __('Email Password Reset Link') }}
             </button>
         </div>
     </form>

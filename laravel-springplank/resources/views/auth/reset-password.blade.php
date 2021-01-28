@@ -13,17 +13,14 @@
         </div>
     @endif
 
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" action="{{ route('password.update') }}">
         @csrf
 
-        <div>
-            <label>{{ __('Name') }}</label>
-            <input type="text" name="name" value="{{ old('name') }}" required autofocus autocomplete="name" />
-        </div>
+        <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
         <div>
-            <label>{{ __('Email') }}</label>
-            <input type="email" name="email" value="{{ old('email') }}" required />
+        	<label>{{ __('Email') }}</label>
+        	<input type="email" name="email" value="{{ old('email', $request->email) }}" required autofocus />
         </div>
 
         <div>
@@ -36,13 +33,9 @@
             <input type="password" name="password_confirmation" required autocomplete="new-password" />
         </div>
 
-        <a href="{{ route('login') }}">
-            {{ __('Already registered?') }}
-        </a>
-
         <div>
             <button type="submit">
-                {{ __('Register') }}
+                {{ __('Reset Password') }}
             </button>
         </div>
     </form>

@@ -1,12 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    @if (session('status'))
-        <div>
-            {{ session('status') }}
-        </div>
-    @endif
-
     @if ($errors->any())
         <div>
             <div>{{ __('Whoops! Something went wrong.') }}</div>
@@ -19,13 +13,8 @@
         </div>
     @endif
 
-    <form method="POST" action="{{ route('login') }}">
+    <form method="POST" action="{{ route('password.confirm') }}">
         @csrf
-
-        <div>
-            <label>{{ __('Email') }}</label>
-            <input type="email" name="email" value="{{ old('email') }}" required autofocus />
-        </div>
 
         <div>
             <label>{{ __('Password') }}</label>
@@ -33,20 +22,15 @@
         </div>
 
         <div>
-            <label>{{ __('Remember me') }}</label>
-            <input type="checkbox" name="remember">
+            <button type="submit">
+                {{ __('Confirm Password') }}
+            </button>
         </div>
 
         @if (Route::has('password.request'))
             <a href="{{ route('password.request') }}">
-                {{ __('Forgot your password?') }}
+                {{ __('Forgot Your Password?') }}
             </a>
         @endif
-
-        <div>
-            <button type="submit">
-               {{ __('Login') }}
-            </button>
-        </div>
     </form>
 @endsection
