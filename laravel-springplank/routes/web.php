@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('home', function () {
     return view('home');
 })->middleware('verified');
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::view('home', 'home');

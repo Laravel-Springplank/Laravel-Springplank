@@ -140,6 +140,10 @@ return [
         Features::twoFactorAuthentication([
             'confirmPassword' => true,
         ]),
+
+        Features::emailVerification(),
+        Features::updateProfileInformation(),
+        Features::updatePasswords(),
     ],
 
 ];
