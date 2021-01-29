@@ -60,12 +60,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-<<<<<<< Updated upstream
-=======
+
 
 ## Permissions
 To create roles use the following commands:
 - **php artisan permission:create-role Administrator**
 - **php artisan permission:create-role Moderator**
 - **php artisan permission:create-role Gebruiker**
-
