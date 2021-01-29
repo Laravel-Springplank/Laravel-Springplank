@@ -134,21 +134,16 @@ return [
     'features' => [
         Features::registration(),
         Features::resetPasswords(),
-<<<<<<< Updated upstream
-        // Features::emailVerification(),
+        Features::emailVerification(),
         Features::updateProfileInformation(),
         Features::updatePasswords(),
         Features::twoFactorAuthentication([
             'confirmPassword' => true,
         ]),
-=======
+
         Features::emailVerification(),
         Features::updateProfileInformation(),
         Features::updatePasswords(),
-       // Features::twoFactorAuthentication([
-       //    'confirmPassword' => true,
-       // ]),
->>>>>>> Stashed changes
     ],
 
 ];
