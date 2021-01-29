@@ -18,10 +18,8 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 Route::get('home', function () {
     return view('home');
-})->middleware('verified');
+})->middleware('verified', 'auth');
 
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::view('home', 'home');
