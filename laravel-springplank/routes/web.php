@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< Updated upstream
 Route::view('home', 'home');
+=======
+>>>>>>> Stashed changes
