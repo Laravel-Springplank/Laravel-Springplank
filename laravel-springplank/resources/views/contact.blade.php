@@ -3,7 +3,7 @@
 @section('content')
     <section id="homepage">
         <div class="container">
-            <div class="welcome-header">
+            <div class="contact-header">
                 <div class="row align-items-center">
                     <div data-aos="fade-up" class="col-lg-6 aos-init aos-animate">
                         <h1 style="font-size:60px" class="page-header-title">Contact</h1>
