@@ -28,6 +28,12 @@
     border-radius: 10px;
 }
 
+.input-field-input-checkbox {
+    transform: scale(2);
+    /*margin-left:200px;*/
+    /*padding: 15px;*/
+}
+
 .input-field-input-message {
     padding: 15px;
     border-color: rgba(84, 104, 255, 0.2);
