@@ -13,6 +13,4 @@ To create roles use the following commands:
 - **php artisan permission:create-role Administrator**
 - **php artisan permission:create-role Moderator**
 - **php artisan permission:create-role Gebruiker**
-- **composer require spatie/laravel-permission**
-- **php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"**
-- **php artisan migrate**
+- composer install
