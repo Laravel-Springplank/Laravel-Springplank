@@ -6,7 +6,11 @@
     'aliases' => 
     array (
     ),
+<<<<<<< Updated upstream
     'reference' => '1f2934fa3ecd5096f74ce7b68813a7951f6ca645',
+=======
+    'reference' => 'cf27593ee99e750ad21ecdc859780fa2c5d49a0e',
+>>>>>>> Stashed changes
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -472,7 +476,11 @@
       'aliases' => 
       array (
       ),
+<<<<<<< Updated upstream
       'reference' => '1f2934fa3ecd5096f74ce7b68813a7951f6ca645',
+=======
+      'reference' => 'cf27593ee99e750ad21ecdc859780fa2c5d49a0e',
+>>>>>>> Stashed changes
     ),
     'laravel/sail' => 
     array (
