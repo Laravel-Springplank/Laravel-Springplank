@@ -13,3 +13,4 @@ To create roles use the following commands:
 - **php artisan permission:create-role Administrator**
 - **php artisan permission:create-role Moderator**
 - **php artisan permission:create-role Gebruiker**
+- composer install
