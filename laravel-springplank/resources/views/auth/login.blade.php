@@ -5,7 +5,7 @@
         <div class="container">
             <div class="contact-header">
                 <div class="row align-items-center">
-                    <div data-aos="fade-up" class="col-lg-6 aos-init aos-animate">
+                    <div data-aos="fade-up" class="col-lg-6 aos-init aos-animate d-none d-lg-block">
                         <h1 style="font-size:60px" class="page-header-title">Login</h1>
                         <h2 style="margin-bottom: 150px">Gebruik uw gebruikersnaam en wachtwoord om in het systeem in te loggen.</h2>
 

@@ -5,7 +5,7 @@
         <div class="container">
             <div class="contact-header">
                 <div class="row align-items-center">
-                    <div data-aos="fade-up" class="col-lg-6 aos-init aos-animate">
+                    <div data-aos="fade-up" class="col-lg-6 aos-init aos-animate d-none d-lg-block">
                         <h1 style="font-size:60px" class="page-header-title">Register</h1>
                         <h2 style="margin-bottom: 150px">Maak een account om in ons systeem
                             <br> in te kunnen inloggen.</h2>
