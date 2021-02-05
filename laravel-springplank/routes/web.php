@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,6 @@ Route::get('home', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('users', UserController::class)
+    ->middleware('auth');
