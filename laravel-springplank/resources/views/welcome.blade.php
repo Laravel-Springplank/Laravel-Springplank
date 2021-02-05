@@ -11,7 +11,7 @@
                         <h1 class="mb-4">Hoofdpagina</h1>
                         <p style="font-size: 20px" class="page-header-text mb-2">Subscribe to our newsletter</p>
                         <input class="subInput " placeholder="name@example.com" type="text">
-                        <a class="btn btn-lg mr-3 font-weight-500 subBtn" >Get started</a>
+                        <a class="btn btn-lg mr-3 font-weight-500 subBtn">Get started</a>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="50" class="col-lg-6 d-none d-lg-block aos-init aos-animate">
                         <img width="100%" src="{{ asset('images/iphone12.svg') }}" class="img-fluid">

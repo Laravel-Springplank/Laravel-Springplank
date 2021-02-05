@@ -16,6 +16,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('home', function () {
     return view('home');
