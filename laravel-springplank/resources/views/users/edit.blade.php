@@ -37,26 +37,27 @@
                             </ul>
                         </div>
                     @endif
-                    <form action="{{ route('users.update', $user->id) }}" method="POST" >
+                    <form action="{{ route('users.update', $user->id) }}" method="post">
+                        @method('PUT')
                         @csrf
 
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <h3>Gebruiksnaam:</h3>
-                                    <input class="input-field-input mb-4" type="text" value="{{$user->name }}" name="{{ $user->name }}" class="form-control" placeholder="Voer gebruikersnaam in...">
+                                    <input class="input-field-input mb-4" type="text" value="{{$user->name }}" name="name" class="form-control" placeholder="Voer gebruikersnaam in...">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <h3>Email:</h3>
-                                    <input class="input-field-input mb-4" type="text" value="{{$user->email }}" name="{{ $user->email }}" class="form-control" placeholder="Voer email in...">
+                                    <input class="input-field-input mb-4" type="text" value="{{$user->email }}" name="email" class="form-control" placeholder="Voer email in...">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12">
                                 <div class="form-group">
                                     <h3>Wachtwoord:</h3>
-                                    <input class="input-field-input mb-4" type="password" value="{{$user->password }}" name="{{ $user->password }}" class="form-control" placeholder="Voer wachtwoord in...">
+                                    <input class="input-field-input mb-4" type="password" value="{{$user->password }}" name="password" class="form-control" placeholder="Voer wachtwoord in...">
                                 </div>
                             </div>
                         </div>
