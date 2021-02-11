@@ -6,11 +6,7 @@
     'aliases' => 
     array (
     ),
-<<<<<<< Updated upstream
-    'reference' => '1f2934fa3ecd5096f74ce7b68813a7951f6ca645',
-=======
-    'reference' => 'cf27593ee99e750ad21ecdc859780fa2c5d49a0e',
->>>>>>> Stashed changes
+    'reference' => '3adcc7d004b0d3d638fb1e8d29a25d705a4067da',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -109,6 +105,15 @@
       array (
       ),
       'reference' => '7a8c6e56ab3ffcc538d05e8155bb42269abf1a0c',
+    ),
+    'drewm/mailchimp-api' => 
+    array (
+      'pretty_version' => 'v2.5.4',
+      'version' => '2.5.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c6cdfab4ca6ddbc3b260913470bd0a4a5cb84c7a',
     ),
     'egulias/email-validator' => 
     array (
@@ -476,11 +481,7 @@
       'aliases' => 
       array (
       ),
-<<<<<<< Updated upstream
-      'reference' => '1f2934fa3ecd5096f74ce7b68813a7951f6ca645',
-=======
-      'reference' => 'cf27593ee99e750ad21ecdc859780fa2c5d49a0e',
->>>>>>> Stashed changes
+      'reference' => '3adcc7d004b0d3d638fb1e8d29a25d705a4067da',
     ),
     'laravel/sail' => 
     array (
@@ -1021,6 +1022,15 @@
       array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
+    ),
+    'spatie/laravel-newsletter' => 
+    array (
+      'pretty_version' => '4.9.0',
+      'version' => '4.9.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '659893001e73b5ea5b9b6dd73a06a8574ea735a7',
     ),
     'spatie/laravel-permission' => 
     array (

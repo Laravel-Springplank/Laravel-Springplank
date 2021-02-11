@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\NewsletterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,6 @@ Route::get('/', function () {
 
 Route::resource('users', UserController::class)
     ->middleware('auth');
+
+Route::get('newsletter', [NewsletterController::class, 'create'])->name('newsletter.create');
+Route::post('newsletter', [NewsletterController::class, 'store'])->name('newsletter.store');
