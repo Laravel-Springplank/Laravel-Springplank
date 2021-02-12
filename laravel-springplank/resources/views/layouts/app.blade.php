@@ -47,11 +47,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a id="navbarDropdown" class="nav-link" href="/users" role="button" aria-haspopup="true" aria-expanded="false" v-pre>
-                                Admin
-                            </a>
-                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -71,6 +66,11 @@
                                 </li>
                             @endif
                         @else
+                            <li class="nav-item">
+                                <a id="navbarDropdown" class="nav-link" href="/users" role="button" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Admin
+                                </a>
+                            </li>
 
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
