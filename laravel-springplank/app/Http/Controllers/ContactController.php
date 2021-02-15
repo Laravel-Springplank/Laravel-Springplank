@@ -28,8 +28,5 @@ class ContactController extends Controller
         Mail::to(env('MAIL_USERNAME'))->send(new ContactEmail($data));
 
         return back()->with('success','Contact email sent!');
-
-
-
     }
 }

@@ -21,11 +21,34 @@
                         </div><br />
                        @endif
                         <p style="font-size: 20px" class="page-header-text mb-2">Subscribe to our newsletter</p>
+<<<<<<< Updated upstream
                         <form method="POST" action="{{url('newsletter')}}">
 
                         <input class="subInput" name="email" placeholder="name@example.com" type="text">
                         <a class="btn btn-lg mr-3 font-weight-500 subBtn">Get started</a>
                         @csrf
+=======
+                        @if (\Session::has('success'))
+                            <div class="alert alert-success">
+                                <p>{{ \Session::get('success') }}</p>
+                            </div><br />
+                        @endif
+                        @if (\Session::has('failure'))
+                            <div class="alert alert-danger">
+                                <p>{{ \Session::get('failure') }}</p>
+                            </div><br />
+                        @endif
+                        <form method="POST" action="{{route('newsletter.store')}}">
+                            @csrf
+                            <input class="subInput @error('email') is-invalid @enderror" name="email" placeholder="name@example.com" type="email">
+                            @error('email')
+
+                            <span class="invalid-feedback">
+                                    <strong>{{$message }}</strong>
+                                </span>
+                            @enderror
+                            <button type="submit" class="btn btn-lg mr-3 font-weight-500 subBtn">Get started</button>
+>>>>>>> Stashed changes
                         </form>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="50" class="col-lg-6 d-none d-lg-block aos-init aos-animate">
