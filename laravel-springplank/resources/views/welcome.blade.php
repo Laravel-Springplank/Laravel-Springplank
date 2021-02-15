@@ -9,9 +9,21 @@
                         <h1 style="font-size:60px" class="page-header-title">Laravel Springplank</h1>
                         <h1>Deltion College project</h1>
                         <h1 class="mb-4">Hoofdpagina</h1>
+
+                        @if (\Session::has('success'))
+                        <div class="alert alert-success">
+                          <p>{{ \Session::get('success') }}</p>
+                        </div><br />
+                       @endif
+                       @if (\Session::has('failure'))
+                        <div class="alert alert-danger">
+                          <p>{{ \Session::get('failure') }}</p>
+                        </div><br />
+                       @endif
                         <p style="font-size: 20px" class="page-header-text mb-2">Subscribe to our newsletter</p>
                         <form method="POST" action="{{url('newsletter')}}">
-                        <input class="subInput " placeholder="name@example.com" type="text">
+
+                        <input class="subInput" name="email" placeholder="name@example.com" type="text">
                         <a class="btn btn-lg mr-3 font-weight-500 subBtn">Get started</a>
                         @csrf
                         </form>

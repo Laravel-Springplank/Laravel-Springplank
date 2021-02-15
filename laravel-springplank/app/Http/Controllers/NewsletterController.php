@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 namespace App\Http\Controllers;
 
-use App\Models\Newsletter;
+use Newsletter;
 
 class NewsletterController extends Controller
 {
@@ -15,16 +15,12 @@ class NewsletterController extends Controller
         return view('newsletter');
     }
 
-    /**
-     *  @param \App\Models\Newsletter
-     *  @return \Illuminate\Http\Response
-     */
-
-    public function store(Request $request, Newsletter $newsletter)
+    public function store(Newsletter $newsletter)
     {
-        if ( ! Newsletter::isSubscribed($request->email) )
+        // dd(request()->email);
+        if ( ! Newsletter::isSubscribed(request()->email) )
         {
-            Newsletter::subscribePending($request->email);
+            Newsletter::subscribePending(request()->email);
             return redirect('newsletter')->with('success', 'Thanks For Subscribe');
         }
         return redirect('newsletter')->with('failure', 'Sorry! You have already subscribed ');
